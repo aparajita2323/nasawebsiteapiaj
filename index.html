@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aj's NASA API Pictures</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="https://s2.googleusercontent.com/s2/favicons?domain=www.nasa.gov">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <!-- ZTM Favicon -->
+    <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
+</head>
+
+<body>
+    <!-- loader -->
+    <div class="loader hidden">
+        <img src="rocket-1.svg" alt="a rocket loader">
+    </div>
+    <!-- container -->
+    <div class="container">
+        <!-- navigation-container -->
+        <div class="navigation-container">
+            <span class="background"></span>
+            <!-- results Nav -->
+            <span class="navigation-items" id="resultsNav">
+                <h3 class="clickable" onclick="updateDOM('favourites')">Favourites</h3>
+                <h3>&nbsp;&nbsp;&nbsp;• &nbsp;&nbsp;&nbsp;</h3>
+                <h3 class="clickable" onclick="getimages()">More Astronomy Pictures Of The Day</h3>
+            </span>
+            <!-- Favourites Nav -->
+            <span class="navigation-items hidden" id="favouritesNav">
+                <h3 class="clickable" onclick="updateDOM('results')">Back to Results</h3>
+            </span>
+
+        </div>
+        <!-- image container -->
+        <div class="images-container">
+        </div>
+
+    </div>
+    <!-- save confirmed -->
+    <div class="save-confirmed hidden">
+        <h1>Added to favourites</h1>
+    </div>
+    <!-- share on social media -->
+    <div class="share">
+        <h3 class="sharetext">share on :</h3>
+        <div class="button">
+            <button class="twitter" id="twitter">
+                <i class="fab fa-twitter"></i>
+            </button>
+            <button class="whatsapp" id="whatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </button>
+            <button class="facebook" id="facebook">
+                <i class="fab fa-facebook"></i>
+            </button>
+        </div>
+
+    </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -5,7 +5,7 @@ const saveConfirmed=document.querySelector('.save-confirmed');
 const loader =document.querySelector('.loader');
 
 function showcontent(){
-  window.scrollTo({top:0 , behaviour: 'instant'});
+  window.scrollTo({top:0 , behavior: 'instant'});
   loader.classList.add('hidden');
 }
 // nasa api
@@ -156,8 +156,6 @@ function updateDOM(page) {
   
  
   
-  
-
 
 
   function saveFavourite(itemurl) {
@@ -183,26 +181,6 @@ function updateDOM(page) {
     }
   }
   
-  
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 const twitterbtn=document.getElementById('twitter');
